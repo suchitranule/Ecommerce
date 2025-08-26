@@ -1,0 +1,11 @@
+<app-load-spinner></app-load-spinner>
+<app-header *ngIf="layoutService.showHeaderSidebar$ | async"></app-header>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <app-sidebar *ngIf="layoutService.showHeaderSidebar$ | async"></app-sidebar>
+
+  <!-- Main Content -->
+  <div class="main-content flex-grow-1 p-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

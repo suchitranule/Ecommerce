@@ -1,0 +1,24 @@
+.product-card {
+      border: 1px solid #0d6efd;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .viewport {
+  height: 600px;   /* Adjust based on your layout */
+  width: 100%;
+  border: 1px solid #ddd;
+  overflow: auto;
+}

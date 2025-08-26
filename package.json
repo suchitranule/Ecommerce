@@ -1,0 +1,51 @@
+{
+  "name": "ecommerce",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "purgecss": "node purgecss.js",
+    "build:prod": "ng build --configuration production && node purgecss.js"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^20.2.0",
+    "@angular/common": "^20.1.0",
+    "@angular/compiler": "^20.1.0",
+    "@angular/core": "^20.1.0",
+    "@angular/forms": "^20.1.0",
+    "@angular/platform-browser": "^20.1.0",
+    "@angular/router": "^20.1.0",
+    "bootstrap": "^5.3.7",
+    "ngx-bootstrap": "^20.0.0",
+    "rxjs": "~7.8.0",
+    "source-map-explorer": "^2.5.3",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^20.0.0",
+    "@angular/build": "^20.1.4",
+    "@angular/cli": "^20.1.4",
+    "@angular/compiler-cli": "^20.1.0",
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "postcss": "^8.5.6",
+    "postcss-scss": "^4.0.9",
+    "purgecss": "^7.0.2",
+    "typescript": "~5.8.2"
+  }
+}

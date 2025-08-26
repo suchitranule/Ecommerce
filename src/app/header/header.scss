@@ -1,0 +1,21 @@
+.navbar-brand {
+      font-weight: 600;
+    }
+    .icon-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      color: white;
+      margin-left: 15px;
+      position: relative;
+    }
+    .notification-badge {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 50%;
+    }
