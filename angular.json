@@ -22,7 +22,6 @@
       "architect": {
         "build": {
           "builder": "@angular/build:application",
-
           "options": {
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,8 +36,10 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
-
           },
           "configurations": {
             "production": {

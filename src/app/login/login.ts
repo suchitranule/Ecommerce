@@ -11,7 +11,7 @@ import { LayoutService } from '../layout-service';
   selector: 'app-login',
   standalone: false,
   templateUrl: './login.html',
-  styleUrls: ['./login.scss']
+  styleUrls: ['./login.css']
 })
 export class Login {
   loginForm!: FormGroup;
@@ -33,6 +33,7 @@ export class Login {
             return throwError(() => err);
           })).subscribe(resp =>{
               console.log(resp);
+              sessionStorage.setItem('username',(resp as any)['username'])
               sessionStorage.setItem('token',(resp as any)['accessToken']);
               this.router.navigate(['/product/list']);
     });

@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .login-box {
+    margin: 0 auto;          /* center horizontally */
+    width: 90%;              /* take most of mobile width */
+  }
+}
