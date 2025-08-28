@@ -17,6 +17,9 @@ ngOnInit() {
 }
 
 onLogout() {
+  sessionStorage.removeItem('username');
+  sessionStorage.removeItem('token');
   this.router.navigate(['/login']);
 }
+
 }
