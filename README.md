@@ -2,6 +2,21 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
 
+## 🚀 Tech Stack  
+- **Angular** (20.1.4)  
+- **HTML5, CSS3, Bootstrap**  
+- **PurgeCSS** (CSS optimization)  
+- **DummyJSON API** (for product & user data)  
+
+## ✨ Features  
+- ⚡ **Lazy Loading** – improves initial load time by loading modules only when needed.  
+- 🔄 **Change Detection Strategy: OnPush** – boosts performance by reducing unnecessary checks.  
+- 🖼️ **NgOptimizedImage** – optimized image loading for better performance.  
+- 🔑 **Authentication & Authorization** – implemented using **Interceptors** and **AuthGuards**.  
+- 🎨 **CSS Optimization with PurgeCSS** – removes unused styles from production builds.  
+- 📱 **Responsive UI** – mobile-friendly layout with Bootstrap.  
+
+
 ## Development server
 
 To start a local development server, run:
