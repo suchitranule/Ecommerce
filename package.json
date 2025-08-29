@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "purgecss": "node purgecss.js",
-    "build:prod": "ng build --configuration production"
+    "build:prod": "ng build --configuration production && node purgecss.js"
   },
   "prettier": {
     "overrides": [
