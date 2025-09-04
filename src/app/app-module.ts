@@ -22,7 +22,7 @@ import { LoadSpinner } from './core/shared/component/load-spinner/load-spinner';
     Registration,
     Header,
     Sidebar,
-    LoadSpinner
+    LoadSpinner,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +40,7 @@ import { LoadSpinner } from './core/shared/component/load-spinner/load-spinner';
     LayoutService,
     LoadSpinnerService
   ],
+  exports: [LoadSpinner],  // ✅ must export
   bootstrap: [App]
 })
 export class AppModule { }

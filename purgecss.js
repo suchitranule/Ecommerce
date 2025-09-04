@@ -23,18 +23,18 @@ async function run() {
     ],
     css: ['dist/ecommerce/browser/styles-YPD7T5SI.css'],
     safelist: {
-    standard: [
-      /^btn/,       // keep all Bootstrap buttons
-      /^col/,       // grid system
-      /^row/,       // row
-      /^container/, // container and container-fluid
-      /^navbar/,    // navbars
-      /^dropdown/,  // dropdown menus
-      /^alert/,     // alerts
-      /^card/,      // cards
-      /^form/,      // forms
-    ],
-  },
+      standard: [
+        /^btn/,       // keep all Bootstrap buttons
+        /^col/,       // grid system
+        /^row/,       // row
+        /^container/, // container and container-fluid
+        /^navbar/,    // navbars
+        /^dropdown/,  // dropdown menus
+        /^alert/,     // alerts
+        /^card/,      // cards
+        /^form/,      // forms
+      ],
+    },
   })
 
   fs.writeFileSync(

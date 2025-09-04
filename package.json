@@ -9,8 +9,24 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "purgecss": "node purgecss.js",
-    "build:prod": "ng build --configuration production && node purgecss.js"
+    "build:prod": "ng build --configuration production && node purgecss.js",
+    "prepare": "husky install"
   },
+  "lint-staged": {
+  "src/**/*.ts": [
+    "eslint --fix",
+    "prettier --write",
+    "git add"
+  ],
+  "src/**/*.scss": [
+    "prettier --write",
+    "git add"
+  ],
+  "src/**/*.html": [
+    "prettier --write",
+    "git add"
+  ]
+},
   "prettier": {
     "overrides": [
       {
@@ -31,6 +47,8 @@
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
     "bootstrap": "^5.3.7",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine-html-reporter": "^2.1.0",
     "ngx-bootstrap": "^20.0.0",
     "rxjs": "~7.8.0",
     "source-map-explorer": "^2.5.3",
@@ -43,9 +61,12 @@
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.0",
     "@fullhuman/postcss-purgecss": "^7.0.2",
+    "@types/jasmine": "^5.1.9",
+    "karma-chrome-launcher": "^3.2.0",
     "postcss": "^8.5.6",
     "postcss-scss": "^4.0.9",
     "purgecss": "^7.0.2",
-    "typescript": "~5.8.2"
+    "typescript": "~5.8.2",
+    "husky": "^8.0.0"
   }
 }
